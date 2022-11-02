@@ -12,7 +12,7 @@ for(let i=1; i<=num; i++){
     }
 }
 
-if(count){
+if(flag){
     console.log("Not a Prime");
 }
 else{
