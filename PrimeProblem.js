@@ -2,19 +2,15 @@ let num=9;
 let count=0;
 let flag=false;
 
-for(let i=1; i<=num; i++){
+for(let i=2; i*i<=num; i++){
+    if(num<=1){
+        console.log("notPrime");
+        return;
+    }
     if(num%i==0){
-        count++;
+        console.log("notPrime");
+        return;
     }
-    if(count>2){
-        flag=true;
-        break;
-    }
+    console.log("prime");
 }
 
-if(flag){
-    console.log("Not a Prime");
-}
-else{
-    console.log("Prime");
-}
